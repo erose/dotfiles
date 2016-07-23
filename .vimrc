@@ -1,3 +1,6 @@
+" Color syntax highlighting.
+syntax on
+
 " autocmd BufNewFile,BufRead *.py: Run the following on opening or reading a Python file.
 " tabstop=4: Existing tabs count for four columns.
 " softtabstop=4: hitting tab will fill in up to the appropriate amount.
