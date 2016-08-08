@@ -9,7 +9,6 @@ syntax on
 " expandtab: Tabs are spaces.
 " autoindent: Copy indent from preceding line.
 " smartindent: Indent after colon.
-
 autocmd BufNewFile,BufRead *.py 
     \ set tabstop=4 | 
     \ set softtabstop=4 | 
