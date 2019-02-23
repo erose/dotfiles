@@ -191,6 +191,10 @@ whos-using-port(){
 # IMPORTS
 source ~/shearwater/dotfiles/.bashrc
 
+### END CUSTOM ###
+
+### BEGIN AUTOMATICALLY ADDED BY THIRD PARTIES (comments here might not be written by me) ###
+
 # For RVM to work.
 source ~/.rvm/scripts/rvm
 
@@ -205,4 +209,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Added by Yarn, I assume. (Although they did not leave a comment.)
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+### END AUTOMATICALLY ADDED BY THIRD PARTIES ###
