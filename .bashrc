@@ -139,7 +139,7 @@ git-filler-commit-message(){
 
 pr-clean(){
   _PREV_BRANCH=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD)
-  gc master && gp && git branch -d $_PREV_BRANCH
+  gc master && git branch -d $_PREV_BRANCH && gp
 }
 __git_complete pr-clean _git_checkout
 alias s='git status'
