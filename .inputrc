@@ -1,0 +1,6 @@
+# See https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html for more on this file.
+
+# This customization allows us to filter history searching with what we've already typed into the terminal.
+# For example, if we type 'ssh' and then use the up-arrow key, we'll search through all the commands starting with 'ssh' we've ever run.
+"\e[A": history-search-backward
+"\e[B": history-search-forward
