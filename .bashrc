@@ -94,6 +94,7 @@ source ~/.git-completion.bash
 alias r='cd ~/shearwater/mentorcollective-rails' # r for Rails
 alias e='cd ~/shearwater/mentorcollective-ember' # e for Ember
 alias b='cd ~/personal/site-generator && source venv/bin/activate' # b for blog
+alias u='cd ~/personal/upload-music && source venv/bin/activate' # u for upload
 
 alias gp='git pull --ff-only && (if_migrations_necessary || bundle exec rails db:migrate); git remote prune origin'
 __git_complete gp _git_pull
