@@ -195,9 +195,6 @@ whos-using-port(){
   lsof -i :$1
 }
 
-# IMPORTS
-source ~/shearwater/dotfiles/.bashrc
-
 ### END CUSTOM ###
 
 ### BEGIN AUTOMATICALLY ADDED BY THIRD PARTIES (comments here might not be written by me) ###
