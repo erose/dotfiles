@@ -109,6 +109,7 @@ __git_complete gsu _git_stash
 alias grc='git add --all && git rebase --continue'
 alias gra='git rebase --abort'
 alias gtp='bundle exec rails test && git push'
+alias gbtr='git reset --soft HEAD^ && git reset' # 'git backtrack'
 gcm() {
   git commit -m "$1"
 }
