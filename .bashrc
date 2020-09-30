@@ -193,6 +193,12 @@ whos-using-port(){
   lsof -i :$1
 }
 
+# Use the 'z' utility from https://github.com/rupa/z/blob/master/z.sh
+source /home/eli/Tools/z.sh
+
+# Copy STDIN to clipboard.
+alias clipboard='xsel -ib'
+
 ### END CUSTOM ###
 
 ### BEGIN AUTOMATICALLY ADDED BY THIRD PARTIES (comments here might not be written by me) ###
