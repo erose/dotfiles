@@ -94,7 +94,7 @@ source ~/.git-completion.bash
 alias b='cd ~/Personal/Repositories/site-generator && source venv/bin/activate' # b for blog
 alias u='cd ~/Personal/Repositories/music-player && source venv/bin/activate' # u for upload
 
-alias gp='git pull --ff-only && (if_migrations_necessary || bundle exec rails db:migrate); git remote prune origin'
+alias gp='git pull --ff-only && git remote prune origin'
 __git_complete gp _git_pull
 alias gc='git checkout'
 __git_complete gc _git_checkout
