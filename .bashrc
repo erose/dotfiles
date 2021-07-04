@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+SOURCE_DIR=$(readlink "$BASH_SOURCE" | xargs dirname)
+
 ### BEGIN DEFAULT (entries added automatically by Ubuntu) ###
 # I've removed some default entries, but kept others that I liked (or was too scared to remove) around. Comments in this section might not be from me.
 
@@ -88,7 +90,8 @@ alias unswap='sudo swapoff -a && sudo swapon -a'
 # Boo to __pycache__ and .pyc files!
 export PYTHONDONTWRITEBYTECODE=1
 
-source ~/.git-completion.bash
+source "$SOURCE_DIR"/third-party/git-completion.bash
+source "$SOURCE_DIR"/third-party/git-prompt.sh
 
 # Short aliases for common destinations.
 alias b='cd ~/Personal/Repositories/site-generator && source venv/bin/activate' # b for blog
@@ -194,7 +197,7 @@ whos-using-port(){
 }
 
 # Use the 'z' utility from https://github.com/rupa/z/blob/master/z.sh
-source /home/eli/Tools/z.sh
+source "$SOURCE_DIR"/third-party/z.sh
 
 # Copy STDIN to clipboard.
 alias clipboard='xsel -ib'
